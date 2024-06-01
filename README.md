@@ -38,5 +38,3 @@ If you have any questions or inquiries, please feel free to reach out to me thro
 
 Thank you for visiting my personal portfolio repository! I hope you find it informative and visually appealing.
 ![Portfolio](https://lavan-n.github.io/Portfolio/)
-
-![alt text](https://github.com/[LAVAN-N]/[Portfolio]/blob/[main]/HomeSite.png?raw=true)
