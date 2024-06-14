@@ -807,7 +807,8 @@ img {
 .footer__social {
   font-size: 2rem;
   margin-right: var(--mb-1-5);
-  margin-left: 25px;
+  margin-left: 20px;
+  display:row;
 }
 
 .footer__social:hover {
