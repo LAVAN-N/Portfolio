@@ -662,7 +662,8 @@ img {
 /*================== Portfolio ==================*/
 .portfolio__container {
   overflow:initial;
-  padding: auto;
+  padding-left: 20px;
+  padding-right: 35px;
 }
 .portfolio__content {
   width: 40%;
@@ -795,7 +796,7 @@ img {
 .footer__links {
   display:inline-flex;
   overflow:scroll;
-  column-gap: 1.5rem;
+  column-gap: 1rem;
 }
 
 .footer__link:hover {
@@ -806,8 +807,7 @@ img {
 .footer__social {
   font-size: 2rem;
   margin-right: var(--mb-1-5);
-  margin-left: 30px;
-  flex-direction: row;
+  margin-left: 28px;
 }
 
 .footer__social:hover {
