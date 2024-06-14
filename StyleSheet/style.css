@@ -204,7 +204,7 @@ img {
   }
   .nav__btns{
     padding: 20px;
-    justify-content: space-around;
+    justify-content: space-between;
     
   }
 }
@@ -220,6 +220,7 @@ img {
   font-size:1.2rem;
   color: var(--title-color);
   column-gap: 0;
+  font-weight: lighter;
 
 }
 
@@ -228,7 +229,7 @@ img {
 }
 
 .nav__icon {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 .nav__close:hover {
   color: var(--first-color-alt);
@@ -254,25 +255,30 @@ img {
 .home__container {
   padding-left: 30px;
   padding-right: 30px;
-  gap: 1rem;
-
 }
-.home__content {
-  position:static;
+.home__title{
+  margin-bottom: 4%;
 }
-
+.pic{
+  display: flex;
+  width: 200px;
+  height: fit-content;
+  margin-left: 5%;
+  margin-bottom: -10%;
+}
+.home__content{
+  display: block;
+  margin-top: 20%;
+}
 .home__subtitle {
   font-size: 35px;
   color: var(--text-color);
   font-weight: var(--font-medium);
-  
 }
-
 .home__scroll {
-  margin-left: -3.5%;
-  opacity: 0.7;
-  display: none;  
-
+  display: flex;
+  justify-self: end;
+  margin-top: -40px;
 }
 .home__scroll-button {
   color: var(--first-color);
@@ -296,9 +302,9 @@ img {
   display: inline-block;
   background-color: var(--first-color);
   color: #fff;
-  padding: 1rem;
+  padding: 0.7rem;
   margin-bottom: 10px;
-  border-radius: 5rem;
+  border-radius: 0.7rem;
   font-weight: var(--font-medium);
 }
 
@@ -358,7 +364,7 @@ img {
 
 .about__info {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-bottom: var(--mb-2-5);
 }
 
@@ -656,20 +662,17 @@ img {
 /*================== Portfolio ==================*/
 .portfolio__container {
   overflow:initial;
-  padding-right: 15px;
-  padding-left: 20px;
-  
+  padding: auto;
 }
 .portfolio__content {
   width: 40%;
-  padding: 10px;
+  padding: 15px;
 }
 .portfolio__img {
-  width: auto;
+  width: fit-content;
+  height: fit-content;
   border-radius: 0.5rem;
   justify-self:center;
-  
-  
 }
 .portfolio__title {
   font-size: var(--h3-font-size);
@@ -691,7 +694,7 @@ img {
   content:"";
 }
 .swiper-portfolio-icon {
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   display: flex;
   color: var(--first-color);
 }
@@ -785,19 +788,20 @@ img {
 }
 
 .footer__title {
-  font-size: 70px;
+  font-size: 60px;
   margin-bottom: var(--mb-0-25);
   padding-left: 30px;
 }
 
 .footer__subtitle {
-  font-size: 25px;
+  font-size: 20px;
   padding-left: 30px;
 }
 
 .footer__links {
   display:inline-flex;
-  row-gap: 3rem;
+  overflow:scroll;
+  column-gap: 1.5rem;
 }
 
 .footer__link:hover {
@@ -808,7 +812,7 @@ img {
 .footer__social {
   font-size: 2rem;
   margin-right: var(--mb-1-5);
-  margin-left: 20px;
+  margin-left: 30px;
   flex-direction: row;
   
 }
@@ -869,8 +873,6 @@ img {
 /*======================== Media Queries ======================*/
 
 /* For Small Devices */
-
-/* For Small Devices */
 @media screen and (max-width: 350px) {
   .container {
     margin-left: var(--mb-1);
@@ -879,8 +881,6 @@ img {
 
   .nav__menu {
     padding: 2rem 0.25rem 4rem;
-    
-   
   }
 
   .nav__list {
@@ -919,6 +919,9 @@ img {
   .services__modal {
     padding: 0 0.5rem;
   }
+  .footer__links{
+    display: table-column;
+  }
 
   .project__img {
     width: 200px;
@@ -939,7 +942,6 @@ img {
     order: 1;
     justify-self: center;
   }
-
   .about__container,
   .skills__container,
   .project__container,
@@ -963,6 +965,16 @@ img {
 
   body {
     margin: 0;
+  }
+  .pic{
+    display: flex;
+    width: 200px;
+    height: fit-content;
+    margin-left: 5%;
+    margin-bottom: 0%;
+  }
+  .home__title{
+    margin-bottom: 2%;
   }
 
   .section {
@@ -997,7 +1009,8 @@ img {
 
   .nav__list {
     display: flex;
-    column-gap: 2rem;
+    column-gap: 2.8rem;
+    font-weight:lighter;
   }
 
   .nav__menu {
@@ -1008,19 +1021,18 @@ img {
   }
 
   .home__container {
-    row-gap: 5rem;
+    padding: auto;
+  
   }
-
   .home__content {
-    padding-top: 5.5rem;
-    column-gap: 2rem;
-  }
-  .home__blob {
-    width: 240px;
+    display: block;
+    width: 60%;
+    justify-self: center;
+    margin-top: 0%;
   }
 
   .home__scroll {
-    display: block;
+    display: flex;
   }
   .home__scroll-button {
     margin-left: 3rem;
@@ -1101,7 +1113,7 @@ img {
 
   .footer__links {
     flex-direction: row;
-    column-gap: 2rem;
+    column-gap: 1.5rem;
   }
 
   .footer__socials {
@@ -1121,6 +1133,11 @@ img {
   .footer__container {
     padding: 0;
   }
+  .footer__links {
+    flex-direction: row;
+    column-gap: 1rem;
+  }
+
   
   .nav__logo{
     margin-left: 20px;
