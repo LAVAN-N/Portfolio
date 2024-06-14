@@ -364,7 +364,7 @@ img {
 
 .about__info {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin-bottom: var(--mb-2-5);
 }
 
@@ -776,12 +776,6 @@ img {
 .footer {
   padding-top: 2rem;
 }
-
-.footer__container {
-  row-gap: 3.5rem;
-
-}
-
 .footer__bg {
   background-color: var(--first-color-second);
   padding: 2rem 0 8rem;
@@ -814,7 +808,6 @@ img {
   margin-right: var(--mb-1-5);
   margin-left: 30px;
   flex-direction: row;
-  
 }
 
 .footer__social:hover {
