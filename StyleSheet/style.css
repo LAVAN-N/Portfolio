@@ -261,7 +261,7 @@ img {
 }
 .pic{
   display: flex;
-  width: 160px;
+  width: 180px;
   height: fit-content;
   margin-left: 5%;
   margin-bottom: -10%;
