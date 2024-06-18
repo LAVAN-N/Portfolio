@@ -64,7 +64,7 @@ var swiper = new Swiper(".portfolio__container", {
 
   autoplay:{
     delay: 4000,
-    disableOnInteraction: true,
+    disableOnInteraction: false,
   },
   navigation: {
     nextEl: ".swiper-button-next",
